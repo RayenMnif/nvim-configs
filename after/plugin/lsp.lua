@@ -52,7 +52,7 @@ mapping = {
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
     ['<CR>'] = cmp.mapping.confirm({
         behavior = cmp.ConfirmBehavior.Replace,
-        select = false,
+        select = true,
     }),
 
     ["<Tab>"] = cmp.mapping(function(fallback)
@@ -77,9 +77,15 @@ mapping = {
 
 },
 
+completion = {
+    completeopt = "menu,menuone,preview"
+},
+
 sources = cmp.config.sources({
   { name = 'nvim_lsp' },
   { name = 'luasnip' },
+  { name = 'path' },
+  }, {
   },
   { { name = 'buffer' }, }
   ),
@@ -114,7 +120,6 @@ cmp.setup.cmdline(':', {
 
 
 vim.cmd [[
-    set completeopt=menuone,noinsert,noselect
     highlight! default link CmpItemKind CmpItemMenuDefault
 ]]
 
