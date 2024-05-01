@@ -1,3 +1,3 @@
-![image](https://github.com/RayenMnif/nvim-configs/assets/95150185/c9f9191a-f145-4b93-a538-6585f9aa0a52)
+![Screenshot from 2024-05-01 12-12-15-min](https://github.com/RayenMnif/nvim-configs/assets/95150185/44a173bf-3f97-4a8f-b914-7940f1762703)
 
-![image](https://github.com/RayenMnif/nvim-configs/assets/95150185/81764b3f-dc5c-4349-80cf-d77be1d67b8f)
+![Screenshot from 2024-05-01 11-45-45-min](https://github.com/RayenMnif/nvim-configs/assets/95150185/a4a31ee1-d528-4e17-9a59-1572d732e8d4)
