@@ -24,7 +24,7 @@ require("nvim-tree").setup({
   },
 })
 
-vim.keymap.set('n', '<leader>e', "<cmd>NvimTreeToggle<CR>")
+vim.keymap.set('n', '<leader>ee', "<cmd>NvimTreeToggle<CR>")
 vim.keymap.set('n', '<leader>eo', "<cmd>NvimTreeOpen<CR>")
 vim.keymap.set('n', '<leader>ex', "<cmd>NvimTreeClose<CR>")
 vim.keymap.set('n', '<leader>er', "<cmd>NvimTreeRefreach<CR>")

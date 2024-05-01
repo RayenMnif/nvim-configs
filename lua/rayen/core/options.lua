@@ -25,7 +25,6 @@ opt.cursorline = true
 
 opt.termguicolors = true
 opt.background = "dark"
----opt.signcolumn = "no"
 
 opt.backspace = "indent,eol,start"
 
@@ -35,5 +34,3 @@ opt.splitright = true
 opt.splitbelow = true
 
 vim.cmd.colorscheme("everforest")
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

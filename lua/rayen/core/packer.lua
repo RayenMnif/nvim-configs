@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
 
   use { 'tpope/vim-fugitive' }
 
+  use {'terrortylor/nvim-comment'}
+
   use 'nvim-tree/nvim-web-devicons'
 
   use {
