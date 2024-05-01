@@ -2,7 +2,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- optionally enable 24-bit colour
+-- option ally enable 24-bit colour
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
@@ -24,8 +24,8 @@ require("nvim-tree").setup({
   },
 })
 
-vim.keymap.set('n', '<leader>na', "<cmd>NvimTreeToggle<CR>")
-vim.keymap.set('n', '<leader>nv', "<cmd>NvimTreeOpen<CR>")
-vim.keymap.set('n', '<leader>nx', "<cmd>NvimTreeClose<CR>")
-vim.keymap.set('n', '<leader>nr', "<cmd>NvimTreeRefreach<CR>")
+vim.keymap.set('n', '<leader>e', "<cmd>NvimTreeToggle<CR>")
+vim.keymap.set('n', '<leader>eo', "<cmd>NvimTreeOpen<CR>")
+vim.keymap.set('n', '<leader>ex', "<cmd>NvimTreeClose<CR>")
+vim.keymap.set('n', '<leader>er', "<cmd>NvimTreeRefreach<CR>")
 

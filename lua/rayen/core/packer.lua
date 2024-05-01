@@ -45,6 +45,10 @@ return require('packer').startup(function(use)
 
   use {'hrsh7th/nvim-cmp'}
 
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end}
+
   use {'L3MON4D3/LuaSnip'}
   
   use {'hrsh7th/cmp-nvim-lsp'}
