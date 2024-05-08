@@ -1,12 +1,12 @@
 require("bufferline").setup{
     options = {
         always_show_bufferline = false,
-        show_buffer_close_icons = true,
+        show_buffer_close_icons = false,
         show_close_icon = false,
         color_icons = true,
         diagnostics = "nvim_lsp" ,
         tab_size = 26,
-        close_command = "bdelete!", 
+        close_command = "bdelete!",
         show_tab_indicators = true ,
         offsets = {
             {

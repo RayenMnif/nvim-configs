@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
       },
   }
 
+  use 'm4xshen/autoclose.nvim'
+
   use 'andweeb/presence.nvim'
 
   use 'norcalli/nvim-colorizer.lua'
