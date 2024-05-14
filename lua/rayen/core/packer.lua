@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
       },
   }
 
+  use {'neoclide/coc.nvim', branch = 'release'}
+
   use 'm4xshen/autoclose.nvim'
 
   use 'andweeb/presence.nvim'
@@ -38,38 +40,16 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-  use {
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
-      "neovim/nvim-lspconfig",
-  }
-  
-  use {"onsails/lspkind.nvim"}
-
   use 'akinsho/nvim-bufferline.lua'
-
-  use {'hrsh7th/nvim-cmp'}
 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
   end}
 
-  use {'L3MON4D3/LuaSnip'}
-  
-  use {'hrsh7th/cmp-nvim-lsp'}
-  
-  use {'hrsh7th/cmp-buffer'}
-  
-  use {'hrsh7th/cmp-path'}
-  
-  use {'hrsh7th/cmp-cmdline'}
-
   use {
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-
-  -- cool stuff
 
   use 'mg979/vim-visual-multi'
 
