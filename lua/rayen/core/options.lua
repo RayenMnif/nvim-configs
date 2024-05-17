@@ -21,7 +21,7 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
-opt.cursorline = true
+opt.cursorline = false
 
 opt.termguicolors = true
 opt.background = "dark"
@@ -33,4 +33,5 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 
-vim.cmd.colorscheme("everforest")
+vim.cmd.colorscheme("gruvbox")
+-- themes installed : everforest, gruvbox

@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
 
   use {'sainnhe/everforest'}
+  use 'morhetz/gruvbox'
 
   use "xiyaowong/transparent.nvim"
 
