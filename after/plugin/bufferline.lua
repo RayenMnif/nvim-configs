@@ -22,6 +22,12 @@ require("bufferline").setup{
     },
 }
 
+_G.close_tab = function()
+    local bufnr = vim.fn.bufnr('%')
+    vim.cmd('bdelete ' .. bufnr)
+end
+
+vim.api.nvim_set_keymap('n', '<leader>tc', ':lua close_tab()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", '<Tab>', '<cmd>BufferLineCycleNext<CR>', {} )
 vim.api.nvim_set_keymap("n", '<S-Tab>', '<cmd>BufferLineCyclePrev<CR>', {} )
 vim.api.nvim_set_keymap("n", '<S-w>', '<cmd>bdelete<CR>', {} )

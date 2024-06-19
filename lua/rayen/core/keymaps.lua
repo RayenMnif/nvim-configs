@@ -14,7 +14,13 @@ keymap.set("n", "<leader>sh", "<C-w>s")
 keymap.set("n", "<leader>se", "<C-w>=")
 keymap.set("n", "<leader>sx", "<cmd>close<CR>")
 
-keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>")
-keymap.set("n", "<leader>tn", "<cmd>tabn<CR>")
-keymap.set("n", "<leader>tp", "<cmd>tabp<CR>")
+keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<CR>")
+
+_G.auto_cd = function()
+    vim.cmd('lcd ' .. vim.fn.expand('%:p:h'))
+end
+
+vim.cmd [[
+    autocmd BufEnter * lua auto_cd()
+]]
 
