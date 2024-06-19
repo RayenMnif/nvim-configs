@@ -17,10 +17,16 @@ keymap.set("n", "<leader>sx", "<cmd>close<CR>")
 keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<CR>")
 
 _G.auto_cd = function()
-    vim.cmd('lcd ' .. vim.fn.expand('%:p:h'))
+    if vim.bo.buftype ~= 'terminal' then
+        local filepath = vim.fn.expand('%:p:h')
+        if filepath ~= '' then
+            vim.cmd('lcd ' .. filepath)
+        end
+    end
 end
 
 vim.cmd [[
-    autocmd BufEnter * lua auto_cd()
+    autocmd BufEnter * lua _G.auto_cd()
 ]]
+
 
